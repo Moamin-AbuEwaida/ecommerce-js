@@ -36,7 +36,7 @@ const updateShoppingCartHTML = function () {
         })
         parentElement.innerHTML = result.join('');
         document.querySelector('.checkout').classList.remove('hidden');
-        cartSumPrice.innerHTML = "€" + countTheSumPrice();
+        cartSumPrice.innerHTML = "$" + countTheSumPrice();
     } else {
         document.querySelector('.checkout').classList.add('hidden');
         parentElement.innerHTML=`<h4 class="empty">Your shopping cart is empty</h4>`;
